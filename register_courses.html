@@ -17,18 +17,15 @@
         <div class="row">
             <div class="col-md-12">
                 <div class="card" id="regcourse">
-                    <h5 class="card-header"> BIOLOGY 5525 - Bioinformatics and Data Analysis </h5>
+                    <h5 class="card-header" id="course_name"> </h5>
                     <div class="card-block">
 
                         <form id="enroll_form" action="../registration_success.html">
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" id="user_name" placeholder="Enter name">
-                            </div>
-                            <h4> Total seats 50</h4>
-                            <h4> Remaining seats 14</h4>
+                            <h4 id="user_name"></h4>
+                            <h6 id="total_seats"></h6>
+                            <h6 id="remaining_seats"></h6>
 
-                            <button type="submit" class="btn btn-primary">Enroll</button>
+                            <button type="submit" id="enroll" class="btn btn-primary">Enroll</button>
                         </form>
                         
                     </div>

@@ -18,7 +18,7 @@
             <div class="col-md-12">
                 <br />
                 <div class="card" id="course1">
-                    <h5 class="card-header"> COMP - Object Oriented Programming </h5>
+                    <h5 class="card-header"> COMP SCI - Object-Oriented Programming </h5>
                     <div class="card-block">
                         <table class="table table-bordered table-responsive" style="width:100%">
                             <thead class="thead-light">
@@ -37,10 +37,10 @@
                                     <th scope="row">1001</th>
                                     <td>Royal Hall</td>
                                     <td>Mon-Fri <br />8:30 am- 9:30 am</td>
-                                    <td>Robert, Barron</td>
+                                    <td>Michael Smith</td>
                                     <td>Jan 15 2018- May 15 2018</td>
                                     <td>status</td>
-                                    <td><a href="../register_courses.html" class="btn btn-primary">Enroll</a></td>
+                                    <td><a href="../register_courses.html?1001" class="btn btn-primary">Enroll</a></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -58,28 +58,32 @@
                             </ul>
                             <div class="tab-content">
                                 <br />
-                                <div class="tab-pane fade in active" id="links1" role="tabpanel" aria-labelledby="links-tab1">MOOCs</div>
+                                <div class="tab-pane fade in active" id="links1" role="tabpanel" aria-labelledby="links-tab1">
+                                    <a href="https://www.edx.org/course/object-oriented-programming"
+                                       target="_blank">
+                                        MOOCS Link for the course
+                                    </a>
+                                </div>
                                 <div class="tab-pane fade" id="details1" role="tabpanel" aria-labelledby="details-tab1">
-                                    <h6><b>Credits:</b> 3 </h6>
-                                    <h6><b>Prerequisites:</b> course 1, course 2</h6>
-                                    <h6><b>Course description:</b> course 1, course 2</h6>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="images/course1.jpg" style="height:200px; width:400px" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <br />
+                                            <h6><b>Credits:</b> 3 </h6>
+                                            <br />
+                                            <h6><b>Prerequisites:</b> None</h6>
+                                            <br />
+                                            <h6>
+                                                <b>Course description:</b> This course deals with introduction to object oriented programming, classes,
+                                                methods, polymorphism, Programming basics, Algorithms, Data Structures
+                                            </h6>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="tab-pane fade" id="reviews1" role="tabpanel" aria-labelledby="reviews-tab1">
-                                    <h6><b>Nancy, Nill</b> 
-                                        <span class="fa fa-star"></span> 
-                                        <span class="fa fa-star"></span> 
-                                        <span class="fa fa-star"></span> 
-                                        <span class="fa fa-star"></span> 
-                                        3 hours
-                                    </h6>
-                                    <h6>
-                                        <b>Nancy, Nill</b>
-                                        <span class="fa fa-star"></span>
-                                        <span class="fa fa-star"></span> 
-                                        <span class="fa fa-star"></span> 
-                                        <span class="fa fa-star-half-full"></span> 
-                                        3 hours
-                                    </h6>
+                                    <div id="student_review_course1_1"></div>
                                 </div>
                             </div>
                         </div>
@@ -87,9 +91,9 @@
                 </div>
                 <br />
                 <div class="card" id="course2">
-                    <h5 class="card-header"> 2 Data Analysis </h5>
+                    <h5 class="card-header"> COMP SCI - Foundations of data science </h5>
                     <div class="card-block">
-                        <table class="table table-bordered">
+                        <table class="table table-bordered table-responsive" style="width:100%">
                             <thead class="thead-light">
                                 <tr>
                                     <th scope="col">Class</th>
@@ -103,38 +107,594 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Mark</td>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td><a href="../register_courses.html" class="btn btn-primary">Register</a></td>
+                                    <th scope="row">1002</th>
+                                    <td>Hag Hall</td>
+                                    <td>Mon-Wed <br />11:00 am- 12:30 pm</td>
+                                    <td>Robert Barron, <br /> Maria Garcia</td>
+                                    <td>Jan 15 2018- May 15 2018</td>
+                                    <td>status</td>
+                                    <td><a href="../register_courses.html?1002" class="btn btn-primary">Enroll</a></td>
                                 </tr>
                             </tbody>
                         </table>
-                        <div id="course2_extra_details">
+                        <div class="card-text" id="course2_extra_details">
                             <ul class="nav nav-tabs" role="tablist">
                                 <li class="nav-item">
-                                    <a class="nav-link" id="moocs-tab2" data-toggle="tab" href="#moocs2" role="tab" aria-controls="moocs2" aria-selected="true">Home</a>
+                                    <a class="nav-link" id="links-tab2" data-toggle="tab" href="#links2" role="tab" aria-controls="links2" aria-selected="true">MOOCs</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="details-tab2" data-toggle="tab" href="#details2" role="tab" aria-controls="details2" aria-selected="false">Profile</a>
+                                    <a class="nav-link" id="details-tab2" data-toggle="tab" href="#details2" role="tab" aria-controls="details2" aria-selected="false">Other Details</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" id="reviews-tab2" data-toggle="tab" href="#reviews2" role="tab" aria-controls="reviews2" aria-selected="false">Contact</a>
+                                    <a class="nav-link" id="reviews-tab2" data-toggle="tab" href="#reviews2" role="tab" aria-controls="reviews2" aria-selected="false">Reviews</a>
                                 </li>
                             </ul>
                             <div class="tab-content">
                                 <br />
-                                <div class="tab-pane fade show" id="moocs2" role="tabpanel" aria-labelledby="moocs-tab2">moocs link</div>
-                                <div class="tab-pane fade" id="details2" role="tabpanel" aria-labelledby="details-tab2">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS....</div>
-                                <div class="tab-pane fade" id="reviews2" role="tabpanel" aria-labelledby="reviews-tab2">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                                <div class="tab-pane fade in active" id="links2" role="tabpanel" aria-labelledby="links-tab2">
+                                    <a href="https://www.edx.org/professional-certificate/berkeleyx-foundations-of-data-science"
+                                       target="_blank">
+                                        MOOCS Link for the course
+                                    </a>
+                                </div>
+                                <div class="tab-pane fade" id="details2" role="tabpanel" aria-labelledby="details-tab2">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="images/course2.jpg" style="height:200px; width:400px" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <br />
+                                            <h6><b>Credits:</b> 3 </h6>
+                                            <br />
+                                            <h6><b>Prerequisites:</b> None</h6>
+                                            <br />
+                                            <h6>
+                                                <b>Course description:</b> You’ll learn how to combine data with Python programming skills and explore
+                                                problems that you encounter in any field of study, in a future job, and even in everyday life.
+                                                This program will help you become a data scientist by teaching you how to analyze a diverse array of
+                                                real data sets including economic data, geographic data and social networks. 
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="reviews2" role="tabpanel" aria-labelledby="reviews-tab2">
+                                    <div id="student_review_course2_1"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <br/>
+                <div class="card" id="course3">
+                    <h5 class="card-header"> COMP SCI - Introduction to Programming Using Python </h5>
+                    <div class="card-block">
+                        <table class="table table-bordered table-responsive" style="width:100%">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Class</th>
+                                    <th scope="col">Room</th>
+                                    <th scope="col">Days & Times</th>
+                                    <th scope="col">Instructor/s</th>
+                                    <th scope="col">Meeting Dates</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1003</th>
+                                    <td>Cockefair</td>
+                                    <td>Tue-Thr <br />2:30 pm- 3:30 pm</td>
+                                    <td>James Johnson</td>
+                                    <td>Jan 15 2018- May 15 2018</td>
+                                    <td>status</td>
+                                    <td><a href="../register_courses.html?1003" class="btn btn-primary">Enroll</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="card-text" id="course3_extra_details">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="links-tab3" data-toggle="tab" href="#links3" role="tab" aria-controls="links3" aria-selected="true">MOOCs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="details-tab3" data-toggle="tab" href="#details3" role="tab" aria-controls="details3" aria-selected="false">Other Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="reviews-tab3" data-toggle="tab" href="#reviews3" role="tab" aria-controls="reviews3" aria-selected="false">Reviews</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <br />
+                                <div class="tab-pane fade in active" id="links3" role="tabpanel" aria-labelledby="links-tab3">
+                                    <a href="https://www.edx.org/course/introduction-to-programming-using-python"
+                                       target="_blank">
+                                        MOOCS Link for the course
+                                    </a>
+                                </div>
+                                <div class="tab-pane fade" id="details3" role="tabpanel" aria-labelledby="details-tab3">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="images/course3.jpg" style="height:200px; width:400px" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <br />
+                                            <h6><b>Credits:</b> 3 </h6>
+                                            <br />
+                                            <h6><b>Prerequisites:</b><a href="#">Object Oriented Programming</a> </h6>
+                                            <br />
+                                            <h6>
+                                                <b>Course description:</b> This course is an introduction to the Python programming language.
+                                                This course is open to all learners who wish to gain an understanding of the basic components of
+                                                computer programming. You will learn basic computer programming concepts and terminologies such as
+                                                variables, constants, operators, expressions, conditional statements, loops, and functions.
+                                                This Python course includes hands-on exercises to help you understand the components of Python
+                                                programming while incrementally developing more significant programs. The exercises in this course
+                                                will be based on small assignments which will relate to real-world problems.
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="reviews3" role="tabpanel" aria-labelledby="reviews-tab3">
+                                    <div id="student_review_course3_1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="card" id="course4">
+                    <h5 class="card-header"> COMP SCI - Introduction to Computer Science </h5>
+                    <div class="card-block">
+                        <table class="table table-bordered table-responsive" style="width:100%">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Class</th>
+                                    <th scope="col">Room</th>
+                                    <th scope="col">Days & Times</th>
+                                    <th scope="col">Instructor/s</th>
+                                    <th scope="col">Meeting Dates</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1004</th>
+                                    <td>Royal Hall</td>
+                                    <td>Saturday <br />9:30 am- 12:30 pm</td>
+                                    <td>Maria Martinez</td>
+                                    <td>Jan 15 2018- May 15 2018</td>
+                                    <td>status</td>
+                                    <td><a href="../register_courses.html?1004" class="btn btn-primary">Enroll</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="card-text" id="course4_extra_details">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="links-tab4" data-toggle="tab" href="#links4" role="tab" aria-controls="links4" aria-selected="true">MOOCs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="details-tab4" data-toggle="tab" href="#details4" role="tab" aria-controls="details4" aria-selected="false">Other Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="reviews-tab4" data-toggle="tab" href="#reviews4" role="tab" aria-controls="reviews4" aria-selected="false">Reviews</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <br />
+                                <div class="tab-pane fade in active" id="links4" role="tabpanel" aria-labelledby="links-tab4">
+                                    <a href="https://www.edx.org/professional-certificate/microsoft-introduction-to-computer-science"
+                                       target="_blank">
+                                        MOOCS Link for the course
+                                    </a>
+                                </div>
+                                <div class="tab-pane fade" id="details4" role="tabpanel" aria-labelledby="details-tab4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="images/course4.jpg" style="height:200px; width:400px" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <br />
+                                            <h6><b>Credits:</b> 3 </h6>
+                                            <br />
+                                            <h6><b>Prerequisites:</b> None</h6>
+                                            <br />
+                                            <h6>
+                                                <b>Course description:</b> This course teaches you about the fundamental binary language of modern
+                                                computers. You’ll learn about the Turing Machine—a model for the digital computer.
+                                                You’ll also learn the basics of analytic logic and how learning and applying basic principles
+                                                of logic can help you both work with and work on technical solutions. You’ll work in a managed
+                                                environment and learn to code your very first program in Python – a powerful but simple programming
+                                                language used by app developers and data scientists.
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="reviews4" role="tabpanel" aria-labelledby="reviews-tab4">
+                                    <div id="student_review_course4_1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="card" id="course5">
+                    <h5 class="card-header"> LAW - Introduction to Constitutional Law </h5>
+                    <div class="card-block">
+                        <table class="table table-bordered table-responsive" style="width:100%">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Class</th>
+                                    <th scope="col">Room</th>
+                                    <th scope="col">Days & Times</th>
+                                    <th scope="col">Instructor/s</th>
+                                    <th scope="col">Meeting Dates</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">2001</th>
+                                    <td>Library</td>
+                                    <td>Mon-Wed <br />12:30 pm- 2:30 pm</td>
+                                    <td>Sarah Manning</td>
+                                    <td>Jan 15 2018- May 15 2018</td>
+                                    <td>status</td>
+                                    <td><a href="../register_courses.html?2001" class="btn btn-primary">Enroll</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="card-text" id="course5_extra_details">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="links-tab5" data-toggle="tab" href="#links5" role="tab" aria-controls="links5" aria-selected="true">MOOCs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="details-tab5" data-toggle="tab" href="#details5" role="tab" aria-controls="details5" aria-selected="false">Other Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="reviews-tab5" data-toggle="tab" href="#reviews5" role="tab" aria-controls="reviews5" aria-selected="false">Reviews</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <br />
+                                <div class="tab-pane fade in active" id="links5" role="tabpanel" aria-labelledby="links-tab5">
+                                    <a href="https://www.edx.org/course/object-oriented-programming"
+                                       target="_blank">
+                                        MOOCS Link for the course
+                                    </a>
+                                </div>
+                                <div class="tab-pane fade" id="details5" role="tabpanel" aria-labelledby="details-tab5">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="images/course5.jpg" style="height:200px; width:400px" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <br />
+                                            <h6><b>Credits:</b> 3 </h6>
+                                            <br />
+                                            <h6><b>Prerequisites:</b> None</h6>
+                                            <br />
+                                            <h6>
+                                                <b>Course description:</b> An introduction to the law of the United States Constitution,
+                                                including the historical context and evolution of constitutional principles, methods of constitutional
+                                                interpretation and analysis, and basic doctrine concerning the structure of government and
+                                                the protection of individual rights.
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="reviews5" role="tabpanel" aria-labelledby="reviews-tab5">
+                                    <div id="student_review_course5_1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="card" id="course6">
+                    <h5 class="card-header"> LAW - Criminal Law </h5>
+                    <div class="card-block">
+                        <table class="table table-bordered table-responsive" style="width:100%">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Class</th>
+                                    <th scope="col">Room</th>
+                                    <th scope="col">Days & Times</th>
+                                    <th scope="col">Instructor/s</th>
+                                    <th scope="col">Meeting Dates</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">2002</th>
+                                    <td>Library</td>
+                                    <td>Tue-thr <br />9:30 am- 11:30 am</td>
+                                    <td>Maria Rodriguez</td>
+                                    <td>Jan 15 2018- May 15 2018</td>
+                                    <td>status</td>
+                                    <td><a href="../register_courses.html?2002" class="btn btn-primary">Enroll</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="card-text" id="course6_extra_details">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="links-tab6" data-toggle="tab" href="#links6" role="tab" aria-controls="links6" aria-selected="true">MOOCs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="details-tab6" data-toggle="tab" href="#details6" role="tab" aria-controls="details6" aria-selected="false">Other Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="reviews-tab6" data-toggle="tab" href="#reviews6" role="tab" aria-controls="reviews6" aria-selected="false">Reviews</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <br />
+                                <div class="tab-pane fade in active" id="links6" role="tabpanel" aria-labelledby="links-tab6">
+                                    <a href="https://www.edx.org/course/guo-ji-xing-fa-xue-international-pekingx-02930106x-0"
+                                       target="_blank">
+                                        MOOCS Link for the course
+                                    </a>
+                                </div>
+                                <div class="tab-pane fade" id="details6" role="tabpanel" aria-labelledby="details-tab6">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="images/course6.jpg" style="height:200px; width:400px" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <br />
+                                            <h6><b>Credits:</b> 3 </h6>
+                                            <br />
+                                            <h6><b>Prerequisites:</b> None</h6>
+                                            <br />
+                                            <h6>
+                                                <b>Course description:</b> An introduction to substantive criminal law,
+                                                including theories of punishment, basic stages of the criminal process,
+                                                culpability, defenses, parties to crime, conspiracy, attempts, sentencing, homicide,
+                                                and other selected offenses.
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="reviews6" role="tabpanel" aria-labelledby="reviews-tab6">
+                                    <div id="student_review_course6_1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="card" id="course7">
+                    <h5 class="card-header"> LAW - International Investment Law</h5>
+                    <div class="card-block">
+                        <table class="table table-bordered table-responsive" style="width:100%">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Class</th>
+                                    <th scope="col">Room</th>
+                                    <th scope="col">Days & Times</th>
+                                    <th scope="col">Instructor/s</th>
+                                    <th scope="col">Meeting Dates</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">2003</th>
+                                    <td>Library</td>
+                                    <td>Mon-Wed <br />9:30 am- 11:30 am</td>
+                                    <td>Bernadette Clarkson</td>
+                                    <td>Jan 15 2018- May 15 2018</td>
+                                    <td>status</td>
+                                    <td><a href="../register_courses.html?2003" class="btn btn-primary">Enroll</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="card-text" id="course7_extra_details">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="links-tab7" data-toggle="tab" href="#links7" role="tab" aria-controls="links7" aria-selected="true">MOOCs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="details-tab7" data-toggle="tab" href="#details7" role="tab" aria-controls="details7" aria-selected="false">Other Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="reviews-tab7" data-toggle="tab" href="#reviews7" role="tab" aria-controls="reviews7" aria-selected="false">Reviews</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <br />
+                                <div class="tab-pane fade in active" id="links7" role="tabpanel" aria-labelledby="links-tab7">
+                                    <a href="https://www.edx.org/course/international-investment-law-louvainx-louv20x"
+                                       target="_blank">
+                                        MOOCS Link for the course
+                                    </a>
+                                </div>
+                                <div class="tab-pane fade" id="details7" role="tabpanel" aria-labelledby="details-tab7">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="images/course7.jpg" style="height:200px; width:400px" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <br />
+                                            <h6><b>Credits:</b> 3 </h6>
+                                            <br />
+                                            <h6><b>Prerequisites:</b> None</h6>
+                                            <br />
+                                            <h6>
+                                                <b>Course description:</b> This course deals with issues relating
+                                                to a court's power to adjudicate claims. Topics covered may include
+                                                jurisdiction over persons or property, subject matter jurisdiction, venue,
+                                                determining the applicable law, joinder of parties, and recognition and enforcement of judgments.
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="reviews7" role="tabpanel" aria-labelledby="reviews-tab7">
+                                    <div id="student_review_course7_1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="card" id="course8">
+                    <h5 class="card-header"> LAW - Contract Law: From Trust to Promise to Contract</h5>
+                    <div class="card-block">
+                        <table class="table table-bordered table-responsive" style="width:100%">
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Class</th>
+                                    <th scope="col">Room</th>
+                                    <th scope="col">Days & Times</th>
+                                    <th scope="col">Instructor/s</th>
+                                    <th scope="col">Meeting Dates</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">2004</th>
+                                    <td>Library</td>
+                                    <td>Mon-Wed <br />10:30 am- 11:30 am</td>
+                                    <td>Cameron Wilkins</td>
+                                    <td>Jan 15 2018- May 15 2018</td>
+                                    <td>status</td>
+                                    <td><a href="../register_courses.html?2004" class="btn btn-primary">Enroll</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="card-text" id="course8_extra_details">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link" id="links-tab8" data-toggle="tab" href="#links8" role="tab" aria-controls="links8" aria-selected="true">MOOCs</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="details-tab8" data-toggle="tab" href="#details8" role="tab" aria-controls="details8" aria-selected="false">Other Details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" id="reviews-tab8" data-toggle="tab" href="#reviews8" role="tab" aria-controls="reviews8" aria-selected="false">Reviews</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <br />
+                                <div class="tab-pane fade in active" id="links8" role="tabpanel" aria-labelledby="links-tab8">
+                                    <a href="https://www.edx.org/course/contract-law-from-trust-to-promise-to-contract"
+                                       target="_blank">
+                                        MOOCS Link for the course
+                                    </a>
+                                </div>
+                                <div class="tab-pane fade" id="details8" role="tabpanel" aria-labelledby="details-tab8">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <img src="images/course8.jpg" style="height:200px; width:400px" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <br />
+                                            <h6><b>Credits:</b> 3 </h6>
+                                            <br />
+                                            <h6><b>Prerequisites:</b> None</h6>
+                                            <br />
+                                            <h6>
+                                                <b>Course description:</b> his contract law course, with new materials and
+                                                updated case examples, is designed to introduce the range of issues that arise
+                                                when entering and enforcing contracts. It will provide an introduction to what a contract
+                                                is and also analyze the purpose and significance of contracts. Then, it will discuss the intent
+                                                to create legal relations, legality and morality, and the distinction between gifts and bargains.
+                                                The course also investigates common pitfalls: one-sided promises, mistake, fraud, and frustration. 
+
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="reviews8" role="tabpanel" aria-labelledby="reviews-tab8">
+                                    <div id="student_review_course8_1"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+
+                <div class="reviews" style="display:none">
+                    <div id="student_review1">
+                        <p>
+                            <b>Claire Young </b> 
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-o"></span>
+                            <br/>
+                            The class was fantastic. The exams were well made and portioned appropriately. 
+                            The instructor was funny, knowledgeable, and willing to help students. 
+                            The class material was splendid and made the class enjoyable overall. 
+                            I would strongly recommend this instructor to any other student
+                        </p>
+                    </div>
+                    <div id="student_review2">
+                        <p>
+                            <b>Warren Simpson</b> 
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-half-full"></span>
+                            <span class="fa fa-star-o"></span>
+                            <br/>
+                            I really enjoyed this class. I liked the in-class demos/examples to help remember the material. 
+                            I also liked that one exam was dropped. It was a nice reward for working hard throughout the semester. 
+                            I would recommend him as an instructor to those looking to take this course.
+                        </p>
+                    </div>
+                    <div id="student_review3">
+                        <p>
+                            <b>Leonard Slater</b> 
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-o"></span>
+                            <br />
+                            I thought this class was fantastic. It was definitely my favoriteclass this semester. 
+                            I thought the course matter was interesting. 
+                            He was entertaining and engaged and he always communicated things in a clear way. 
+                            If he did go through things too fast for some people, he would always go back and make sure to
+                             clarify any confusion.
+                        </p>
+                    </div>
+                    <div id="student_review4">
+                        <p>
+                            <b>Owen Rutherford</b> 
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-half-full"></span>
+                            <span class="fa fa-star-o"></span>
+                            <br />
+                            He was great. Exams are hard but class was entertaining
+                        </p>
+                    </div>
+                    <div id="student_review5">
+                        <p>
+                            <b>Lauren James</b> 
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star-half-full"></span>
+                            <span class="fa fa-star-o"></span>
+                            <br />
+                            I wish I could provide constructive criticism, but I can’t. Absolutely fantastic
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

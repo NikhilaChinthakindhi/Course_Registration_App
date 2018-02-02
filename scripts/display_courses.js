@@ -20,84 +20,85 @@
 
     //Conditions to display respective courses for respective inputs selected in display_courses page
     // Computer science
-    if (education == "Graduate" && semester == "Spring" && career == "Computer Science") { 
+    if (education == "Graduate" && semester == "Spring" && career == "Computer Science") {
+        $('.card').hide();
         $('#course1').show();
-        $('#course2').hide();
+        $('#course2').show();
+        $('#course3').show();
+        jQuery('#student_review_course1_1').replaceWith(jQuery('#student_review4'));
     }
 
     else if (education == "Graduate" && semester == "Summer" && career == "Computer Science") {
-        $('#course1').show();
+        $('.card').hide();
+        $('#course3').show();
     }
 
     else if (education == "Graduate" && semester == "Fall" && career == "Computer Science") {
+        $('.card').hide();
         $('#course1').show();
+        $('#course2').show();
+        $('#course3').show();
+        $('#course4').show();
     }
 
     else if (education == "Under graduate" && semester == "Spring" && career == "Computer Science") {
+        $('.card').hide();
         $('#course1').show();
-        $('#course2').hide();
+        $('#course2').show();
     }
 
     else if (education == "Under graduate" && semester == "Summer" && career == "Computer Science") {
-        $('#course1').show();
+        $('.card').hide();
+        alert("No available courses");
+        window.location.href = "../index.html";
     }
 
     else if (education == "Under graduate" && semester == "Fall" && career == "Computer Science") {
+        $('.card').hide();
         $('#course1').show();
-    }
-
-    //Dentistry
-    else if (education == "Graduate" && semester == "Spring" && career == "Dentistry") {
-        $('#course1').show();
-        $('#course2').hide();
-    }
-
-    else if (education == "Graduate" && semester == "Summer" && career == "Dentistry") {
-        $('#course1').show();
-    }
-
-    else if (education == "Graduate" && semester == "Fall" && career == "Dentistry") {
-        $('#course1').show();
-    }
-
-    else if (education == "Under graduate" && semester == "Spring" && career == "Dentistry") {
-        $('#course1').show();
-        $('#course2').hide();
-    }
-
-    else if (education == "Under graduate" && semester == "Summer" && career == "Dentistry") {
-        $('#course1').show();
-    }
-
-    else if (education == "Under graduate" && semester == "Fall" && career == "Dentistry") {
-        $('#course1').show();
+        $('#course2').show();
+        $('#course3').show();
     }
 
 
     //Law
     else if (education == "Graduate" && semester == "Spring" && career == "Law") {
-        $('#course1').show();
+        $('.card').hide();
+        $('#course5').show();
+        $('#course6').show();
+        $('#course7').show();
     }
 
     else if (education == "Graduate" && semester == "Summer" && career == "Law") {
-        $('#course1').show();
+        $('.card').hide();
+        $('#course6').show();
     }
 
     else if (education == "Graduate" && semester == "Fall" && career == "Law") {
-        $('#course1').show();
+        $('.card').hide();
+        $('#course5').show();
+        $('#course6').show();
+        $('#course7').show();
+        $('#course8').show();
     }
 
     else if (education == "Under graduate" && semester == "Spring" && career == "Law") {
-        $('#course1').show();
-        $('#course2').hide();
+        $('.card').hide();
+        $('#course5').show();
+        $('#course6').show();
     }
 
     else if (education == "Under graduate" && semester == "Summer" && career == "Law") {
-        $('#course1').show();
+        $('.card').hide();
+        alert("No available courses");
+        window.location.href = "../index.html";
     }
 
     else if (education == "Under graduate" && semester == "Fall" && career == "Law") {
-        $('#course1').show();
+        $('.card').hide();
+        $('#course5').show();
+        $('#course6').show();
+        $('#course7').show();
     }
 
     else {
