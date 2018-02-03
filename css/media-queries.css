@@ -32,6 +32,10 @@
     Extra Small Devices, Phones 
   ===================================================================================================== */
 @media only screen and (max-width : 480px) {
-
+    #home_form{
+    width: 90%;
+    padding: 2% 3% 20% 3%;
+    
+}
   
 }

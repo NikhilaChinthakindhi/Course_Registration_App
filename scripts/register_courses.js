@@ -1,5 +1,4 @@
-﻿
-//get course id passed from display courses page from the url
+﻿//get course id passed from display courses page from the url
 var url = window.location.href.split('?');
 var course_id = url[url.length - 1];
 
@@ -54,10 +53,10 @@ else {
 
 //Assign values to id's to display in register courses page
 $('#course_name').text(course_details_arr.name);
-$('#total_seats').text("Total seats are " + course_details_arr.total);
+$('#total_seats').text("Total seats for the course are " + course_details_arr.total);
 $('#remaining_seats').text("Remaining seats are " + course_details_arr.remaining);
 
-$('#user_name').text("Hi, " + localStorage.getItem("ls_name"));
+$('#user_name').text("Hi " + localStorage.getItem("ls_name") + ",");
 
 
 

@@ -38,7 +38,7 @@
     course = { 'id': 2003, 'name': 'LAW - International Investment Law', 'total': '60', 'remaining': '0' };
     localStorage.setItem("ls_course7", JSON.stringify(course));
 
-    course_ = { 'id': 2004, 'name': 'LAW - International Investment Law', 'total': '60', 'remaining': '26' };
+    course_ = { 'id': 2004, 'name': 'LAW - Contract Law: From Trust to Promise to Contract', 'total': '60', 'remaining': '26' };
     localStorage.setItem("ls_course8", JSON.stringify(course));
 });
 

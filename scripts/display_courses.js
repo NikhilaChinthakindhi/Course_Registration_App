@@ -25,7 +25,6 @@
         $('#course1').show();
         $('#course2').show();
         $('#course3').show();
-        jQuery('#student_review_course1_1').replaceWith(jQuery('#student_review4'));
     }
 
     else if (education == "Graduate" && semester == "Summer" && career == "Computer Science") {
@@ -104,6 +103,18 @@
     else {
         alert("Invalid input");
     }
+    
 
+    //Previous students reviews on instructors and courses
+    jQuery('#student_review_course1_1').replaceWith(jQuery('#student_review1'));
+    jQuery('#student_review_course1_2').replaceWith(jQuery('#student_review2'));
+    jQuery('#student_review_course1_3').replaceWith(jQuery('#student_review3'));
+    jQuery('#student_review_course3_1').replaceWith(jQuery('#student_review4'));
+    jQuery('#student_review_course3_2').replaceWith(jQuery('#student_review5'));
+    jQuery('#student_review_course4_1').replaceWith(jQuery('#student_review1'));
+    jQuery('#student_review_course6_1').replaceWith(jQuery('#student_review3'));
+    jQuery('#student_review_course6_2').replaceWith(jQuery('#student_review2'));
+    jQuery('#student_review_course7_1').replaceWith(jQuery('#student_review1'));
+    jQuery('#student_review_course7_1').replaceWith(jQuery('#student_review4'));
 });
 
