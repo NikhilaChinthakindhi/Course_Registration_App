@@ -55,7 +55,6 @@ else {
 $('#course_name').text(course_details_arr.name);
 $('#total_seats').text("Total seats for the course are " + course_details_arr.total);
 $('#remaining_seats').text("Remaining seats are " + course_details_arr.remaining);
-
 $('#user_name').text("Hi " + localStorage.getItem("ls_name") + ",");
 
 
